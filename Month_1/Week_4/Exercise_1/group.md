@@ -1,9 +1,9 @@
 root`:x:0:`
-daemon:x:1:
-bin:x:2:
-sys:x:3:
-adm:x:4:syslog,ubuntu
-tty:x:5:syslog
+daemon`:x:1:`
+bin`:x:2:`
+sys`:x:3:`
+adm`:x:4:syslog,ubuntu`
+tty`:x:5:syslog`
 disk:x:6:
 lp:x:7:
 mail:x:8:
