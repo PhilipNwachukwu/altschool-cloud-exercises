@@ -4,7 +4,7 @@
 `sys:x:3:`
 `adm:x:4:syslog,ubuntu`
 `tty:x:5:syslog`
-disk:x:6:
+`disk:x:6:
 lp:x:7:
 mail:x:8:
 news:x:9:
@@ -63,4 +63,4 @@ support:x:1005:supportUser
 engineering:x:1006:engineeringUser
 supportUser:x:1007:
 engineeringUser:x:1008:
-admin:x:1009:
+admin:x:1009:`
