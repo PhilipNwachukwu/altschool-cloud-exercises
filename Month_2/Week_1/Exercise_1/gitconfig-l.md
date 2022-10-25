@@ -1,2 +1,2 @@
 # git cofig -l command output
-![git config -l command output](https://github.com/PhilipNwachukwu/altschool-cloud-exercises/blob/main/Month_2/Week_1/Exercise_1/img/git%20config%20-l.png)
+![git config -l.png](img/git%20config%20-l.png)
