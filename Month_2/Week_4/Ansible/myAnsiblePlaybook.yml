@@ -1,0 +1,27 @@
+---
+- name: Setup web server
+  hosts: webservers
+  remote_user: root
+
+  tasks:
+  - name: Install apache server
+    ansible.builtin.apt:
+      name: apache2
+      state: latest
+  - name: Install PHP and associated modules
+    ansible.builtin.apt:
+      name: "{{ item }}"
+      state: present
+    loop:
+      - php
+      - php-cli
+      - php-mysql
+      - php-pdo
+      - php-curl
+  - name: Ensure all packages are updated
+    ansible.builtin.apt:
+      name: "*"
+      state: latest
+  - name: Remove index.html
+    ansible.builtin.file:
+      path: /var/www/html/index.html
