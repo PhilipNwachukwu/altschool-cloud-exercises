@@ -25,3 +25,15 @@
   - name: Remove index.html
     ansible.builtin.file:
       path: /var/www/html/index.html
+      state: absent
+  - name: Add php file to server
+    copy:
+      src: /home/vagrant/ansible/index.php
+      dest: /var/www/html/index.php
+      owner: root
+      group: root
+      mode: '0644'
+  - name: Restart Apache following changes
+    ansible.builtin.service:
+      name: apache2
+      state: restarted
